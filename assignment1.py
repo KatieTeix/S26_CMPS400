@@ -35,9 +35,7 @@ class SortResult:
         self.dataMoves = dataMoves
 
 
-# -----------------------------
 # Helper Functions
-# -----------------------------
 def generate_unique_id(existing_ids):
     while True:
         new_id = 10000 + random.randint(0, 89999)
@@ -53,9 +51,7 @@ def display_array(arr):
     print("Values:", *arr)
 
 
-# -----------------------------
 # Search Algorithms
-# -----------------------------
 def linear_search(arr, target):
     comparisons = 0
     for i in range(len(arr)):
@@ -83,9 +79,7 @@ def binary_search(arr, target):
     return SearchResult(-1, comparisons, False)
 
 
-# -----------------------------
 # Sorting Algorithms
-# -----------------------------
 def selection_sort(arr):
     comparisons = 0
     swaps = 0
@@ -128,9 +122,7 @@ def insertion_sort(arr):
     return SortResult(comparisons, moves)
 
 
-# -----------------------------
 # Main Program
-# -----------------------------
 def main():
     dataset = Dataset()
     used_ids = set()
